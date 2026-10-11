@@ -1,0 +1,16 @@
+@host = http://localhost:5101
+GET {{host}}/api/todoitems
+###
+POST {{host}}/api/todoitems
+Content-Type: application/json
+
+{"name":"walk dog","isComplete":false}
+###
+GET {{host}}/api/todoitems/1
+###
+PUT {{host}}/api/todoitems/1
+Content-Type: application/json
+
+{"id":1,"name":"feed fish","isComplete":true}
+###
+DELETE {{host}}/api/todoitems/1

@@ -1,0 +1,9 @@
+@host = http://localhost:5102
+GET {{host}}/api/books
+###
+POST {{host}}/api/books
+Content-Type: application/json
+
+{"bookName":"The Hobbit","price":12.50,"category":"Fantasy","author":"J. R. R. Tolkien"}
+###
+# Copy the ID returned by POST to use GET/PUT/DELETE.
